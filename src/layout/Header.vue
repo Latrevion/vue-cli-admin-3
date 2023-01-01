@@ -27,7 +27,6 @@
             <el-dropdown-item divided command="logout"><i class="icon zhb-iconfont zhb-icontuichudenglu"></i>退出登录</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
-  
       </div>
     </div>
   </template>
@@ -61,7 +60,7 @@
         logout(command) {
           //跳转登录页
           if(command == 'logout'){
-            this.$router.push('/')
+            this.$router.replace('/login')
           }
         },
         //面包屑点击
